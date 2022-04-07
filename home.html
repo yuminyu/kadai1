@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang = "utf-8">
+        <title>ほめ</title>
+        <link rel = "stylesheet" href = "home.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            
+
+        <div class="botandes">
+            <a class="modal-open">！まずはこちら！</a>
+            <div class="modal-container">
+              <div class="modal-body">
+                <div class="modal-close">×</div>
+                <div class="modal-content">
+                    <p>ベゾスさんは自分の貯金額を忘れたようだ。</p>
+                    <p>１０〜９９の整数を入力してアレクサに照会しよう。</p>
+                    <p>（半角で入力してください。）</p>
+                    <p>・当たったらCorrect</p>
+                    <p>・桁も数字もあっていたら１Great</p>
+                    <p>・数字だけあっているなら１Good</p>
+                    <p>例１：正解が５８、入力が８４</p>
+                    <p>→アレクサ「０Great、１Good」</p>
+                    <p>例２：正解が４２、入力が４７</p>
+                    <p>→アレクサ「１Great、０Good」</p>
+                    <p>例３：正解５５、入力が５３</p>
+                    <p>→アレクサ「１Great、１Good」</p>
+                    <p>例４；正解７４、入力が４７</p>
+                    <p>→アレクサ「０Great、２Good」</p>
+                </div>
+              </div>
+            </div>
+            <input class="zan-ire" type="number" id="tyokin" min="10" max="99">
+            <a class ="check" id="check">貯金額を照会</a>
+            <a class ="check2" id ="check2">何回照会したっけ？</a>
+            <a class="homete" type="button" id="appendhomete">アレクサ！褒めて！！</a>
+            <a class="nagusa" type="button" id="appendnagusa">アレクサ！慰めて！！</a>
+            <a class="hagema" type="button" id="appendhagema">アレクサ！励まして！！</a>
+            <a class="arigatou" type="button" id="appendOrei">アレクサにお礼を言う</a>
+        </div>
+        <div class="zoon">
+            <div class="zoon-ue"></div>
+        </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="home.js"></script>
+    </body>
+</html>

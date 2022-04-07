@@ -1,0 +1,349 @@
+body{
+  background-image: url("amazon.jpeg");
+  background-repeat:repeat;
+  background-size:30%;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+
+/*モーダルを開くボタン*/
+a.modal-open{
+  display:block;
+  height:50px;
+  width:200px;
+  margin-top:30px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: green;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(219, 251, 171);
+}
+
+a.modal-open:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+a.modal-open:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 1;
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+/*モーダル枠の指定*/
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 500px;
+  width: 90%;
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content{
+  background: #fff;
+  text-align: left;
+  padding: 30px;
+}
+
+.wrapper{
+  display:flex;
+  width:1000px;
+  height:765px;
+  margin:0 auto;
+}
+
+.botandes{
+  height:765px;
+  width:200px;
+  margin:auto auto;
+  justify-content:center;
+}
+
+.zoon{
+    height:765px;
+    width:800px;
+    margin:0 auto 0 100px;
+    overflow: scroll;
+    border:2px ridge gray;
+    background-color: rgba(188,226,232,0.5);
+}
+
+.zan-ire{
+  display:block;
+  margin-top:70px;
+  margin-right:auto;
+  margin-left:auto;
+  height:50px;
+  width:180px;
+  border:3px solid black;
+  text-align: center;
+  font-style:bold;
+  font-size:18px;
+}
+
+a.check{
+  display:block;
+  height:50px;
+  width:200px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: red;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(251, 129, 129);
+}
+
+a.check:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+a.check:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+a.check2{
+  display:block;
+  height:50px;
+  width:200px;
+  margin-top:30px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: red;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(251, 129, 129);
+}
+
+a.check2:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+a.check2:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+a.homete{
+    display:block;
+    margin-top:70px;
+    height:50px;
+    width:200px;
+    color:white;
+    border-radius:10px;
+    text-align: center;
+    line-height:50px;
+    align-items: center;
+    background-color: blue;
+    opacity: 0.95;
+    box-shadow: 0px 5px rgb(141, 141, 246);
+}
+
+a.homete:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+a.homete:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+a.nagusa{
+  display:block;
+  margin-top:30px;
+  height:50px;
+  width:200px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: blue;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(141, 141, 246);
+}
+
+a.nagusa:hover{
+opacity:1;
+cursor: pointer;
+}
+
+a.nagusa:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+a.hagema{
+  display:block;
+  margin-top:30px;
+  height:50px;
+  width:200px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: blue;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(141, 141, 246);
+}
+
+a.hagema:hover{
+opacity:1;
+cursor: pointer;
+}
+
+a.hagema:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+a.arigatou{
+  display:block;
+  margin-top:70px;
+  height:50px;
+  width:200px;
+  color:white;
+  border-radius:10px;
+  text-align: center;
+  line-height:50px;
+  align-items: center;
+  background-color: orange;
+  opacity: 0.95;
+  box-shadow: 0px 5px rgb(253, 215, 145);
+}
+
+a.arigatou:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+a.arigatou:active{
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+/*吹き出し*/
+.balloon_l,
+.balloon_r{
+  margin:0;
+  display:flex;
+  justify-content: flex-start;  /*左よせ*/
+  align-items: flex-start; /*上よせ*/
+  background-color: rgba(188,226,232,0.5);
+}
+
+.balloon_l{
+    padding-left:10px;　/*左吹き出し中央らへんに*/
+}
+
+.balloon_r{
+    justify-content:flex-end; /*右吹き出しだけ右よせ*/
+    padding-right:10px;　/*右吹き出し中央らへんに*/
+}
+
+.faceicon img{
+  width: 80px; /*任意のサイズ*/
+  height: auto;
+  margin-top:10px;
+}
+.balloon_r .faceicon{
+  margin-left:30px;
+}
+.balloon_l .faceicon{
+  margin-right:25px;
+}
+.balloon_r .faceicon{
+  order:2 !important;
+}
+.says {
+  max-width:500px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px;
+  background: #99dddd;/*色は任意*/
+  box-sizing:border-box;
+  margin-top:10px;
+  line-height:1.5;
+}
+.says p{
+  margin:8px 0 0 ; 
+}
+.says p:first-child{
+  margin-top:0;
+}
+.says:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+}
+.balloon_l .says:after {
+  left: -26px;
+  border-right: 22px solid #99dddd;
+}
+.balloon_r .says:after {
+  right: -26px;
+  border-left: 22px solid #99dddd;
+}
